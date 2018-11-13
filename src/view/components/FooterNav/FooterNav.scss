@@ -1,0 +1,43 @@
+@import "../../../scss/variables.scss";
+
+.FooterNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  font-size: 1.2rem;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.FooterNav-Item {
+  padding: 4px 0;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+.FooterNav-Link {
+  display: block;
+
+  padding-right: 12px;
+
+  text-decoration: none;
+
+  color: $color-gray;
+
+  &:hover {
+    transition: color 0.5s;
+
+    color: $color-dark-grey;
+  }
+}

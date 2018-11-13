@@ -1,0 +1,52 @@
+@import "../../../scss/variables.scss";
+
+.PageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 92px;
+  min-height: 92px;
+  padding: 0 40px;
+
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+
+  z-index: 400;
+
+  @media (max-width: $tablet-width) {
+    position: fixed;
+    z-index: 400;
+
+    justify-content: space-between;
+
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding: 0;
+
+    background-color: $color-white;
+    box-shadow: 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 68px;
+    min-height: 68px;
+  }
+}
+
+.PageHeader-Logo {
+  width: 108px;
+  height: 27px;
+
+  background-image: url('./../../../image/yandex_logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.PageHeader-Nav {
+  margin-left: 8px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+  }
+}
