@@ -16,7 +16,7 @@ const MainNav = () => (
 
       <ul className={mainNavClass('Items')}>
         <li className={mainNavClass('Item')}>
-          <a className={mainNavClass('Link', {active: true})} href="#">События</a>
+          <a className={mainNavClass('Link')} href="#">События</a>
         </li>
         <li className={mainNavClass('Item')}>
           <a className={mainNavClass('Link')} href="#">Сводка</a>
@@ -28,7 +28,7 @@ const MainNav = () => (
           <a className={mainNavClass('Link')} href="#">Сценарии</a>
         </li>
         <li className={mainNavClass('Item')}>
-          <a className={mainNavClass('Link')} href="#">Камера</a>
+          <a className={mainNavClass('Link', {active: true})} href="#">Камера</a>
         </li>
         <li className={mainNavClass('Item')}>
           <a className={mainNavClass('Link')} href="#">Видеонаблюдение</a>
