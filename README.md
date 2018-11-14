@@ -1,3 +1,17 @@
+## ШРИ2018/2 - ДЗ «БЭМ»
+### Запуск
+```
+npm i
+npm start
+```
+
+### Описание проекта
+- Переверстана страница с камерой (дз «Мультимедия»)
+- React установлен через `CRA`
+- Классы заданы через новый стиль именования
+- Используются пакеты `bem-react/core`, `bem-react/classname` и `bem-react/di`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
