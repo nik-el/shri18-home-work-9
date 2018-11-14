@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { cn } from '@bem-react/classname';
 import './MainNav.scss'
+import Link from '../Link/Link'
 
 const mainNavClass = cn('MainNav');
 const MainNav = () => (
@@ -15,6 +16,13 @@ const MainNav = () => (
     <input type="checkbox" id="show-menu" />
 
       <ul className={mainNavClass('Items')}>
+       <li>
+         <Link
+           type={'active'}
+           className={mainNavClass('Link')}
+         >123</Link>
+       </li>
+
         <li className={mainNavClass('Item')}>
           <a className={mainNavClass('Link')} href="#">События</a>
         </li>

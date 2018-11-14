@@ -1,0 +1,6 @@
+.Link {
+  &_type_disabled {
+    color: gray;
+    cursor: not-allowed;
+  }
+}
