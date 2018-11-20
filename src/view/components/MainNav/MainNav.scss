@@ -1,0 +1,113 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/default.scss";
+
+.MainNav {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.MainNav-Items {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: -20px;
+
+    display: none;
+    flex-direction: column;
+
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: $color-light-gray;
+    background-color: #444;
+  }
+}
+
+.MainNav-Item {
+  width: 100%;
+}
+
+.MainNav-Link {
+  display: block;
+
+  height: 100%;
+  padding: 5px 14px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: $color-gray;
+
+  &:hover {
+    transition: color 0.5s;
+
+    color: $color-red;
+  }
+
+  &_active {
+    color: $color-dark-grey;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 30px;
+
+    color: $color-light-gray;
+
+    &_active {
+      color: $color-gray;
+    }
+  }
+}
+
+.MainNav-Toggle {
+  position: relative;
+  z-index: 200;
+
+  display: none;
+
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    padding: 30px;
+
+    content: '';
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.MainNav-Icon {
+  display: block;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url('./../../../image/icon_menu.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 16px 16px;
+}
+
+.MainNav input[type=checkbox] {
+  display: none;
+
+  &:checked ~ .MainNav-Items {
+    display: flex;
+  }
+}

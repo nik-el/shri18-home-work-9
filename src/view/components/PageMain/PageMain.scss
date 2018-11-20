@@ -1,0 +1,13 @@
+@import "../../../scss/variables.scss";
+
+.PageMain {
+  margin: 20px 40px;
+  margin-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    margin: 40px 20px;
+    margin-top: 70px;
+
+    margin-bottom: 20px;
+  }
+}
